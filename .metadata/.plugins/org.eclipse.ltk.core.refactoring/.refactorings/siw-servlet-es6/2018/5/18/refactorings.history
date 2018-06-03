@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;siw-servlet-es6/WebContent/inseriscistud.jsp.jsp&apos; to &apos;inseriscistud.jsp&apos;" description="Rename resource &apos;inseriscistud.jsp.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/inseriscistud.jsp.jsp" name="inseriscistud.jsp" stamp="1525248800011" updateReferences="true"/>
+</session>

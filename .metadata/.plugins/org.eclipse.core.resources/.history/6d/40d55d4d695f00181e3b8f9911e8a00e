@@ -1,0 +1,25 @@
+package repositoryjpa;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import repository.*;
+
+public class GenericJPARespository implements GenericsRepository {
+
+	//ATTRIBUTI
+	private EntityManager em;
+	EntityTransaction tx;
+	
+	//COSTRUTTORE
+	public GenericJPARespository(EntityManager em){	
+		this.em=em;
+		tx = em.getTransaction();
+	}
+	
+	//METODI
+
+	
+}

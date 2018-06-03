@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="NULL_RUNTIME"/>
+		<item value="Apache Tomcat v8.0"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/home/crismon-01/Documents/esonero2_6.war"/>
+		<item value="/home/crismon-01/Documents/siw-servlet-es4.war"/>
+		<item value="/home/crismon-01/Documents/esonero2_5.war"/>
+		<item value="/home/crismon-01/Documents/esonero2_4.war"/>
+		<item value="/home/crismon-01/Documents/esonero2_3.war"/>
+	</list>
+</section>

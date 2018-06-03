@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;s1&apos; in &apos;it.uniroma3.services.StudenteServices.listaStudenti()&apos; to &apos;studente&apos;&#x0A;- Original project: &apos;siw-servlet-es4&apos;&#x0A;- Original element: &apos;it.uniroma3.services.StudenteServices.listaStudenti().s1&apos;&#x0A;- Renamed element: &apos;s1&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;s1&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;it.uniroma3.services{StudenteServices.java[StudenteServices~listaStudenti@s1!288!316!297!298!QStudente;!0!false" name="studente" references="true" stamp="1525676876588" version="1.0"/>
+</session>

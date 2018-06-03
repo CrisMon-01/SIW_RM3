@@ -1,0 +1,46 @@
+package repositoryjpa;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import repository.*;
+
+public class GenericJPARespository {
+
+	//ATTRIBUTI
+	private EntityManager em;
+	EntityTransaction tx;
+	
+	//COSTRUTTORE
+	public GenericJPARespository(EntityManager em){	
+		this.em=em;
+		tx = em.getTransaction();
+	}
+	
+	//METODI
+	@Override
+	public <T> Class<T> save(Class<T> generic) {
+		
+		return generic;
+	}
+	@Override
+	public Customer findByPrimaryKey(Long id) {		
+		return em.find(Customer.class, id);
+	}
+	@Override
+	public List<Customer> findALl() {
+		List<Customer> customers = em.createNamedQuery("findAllCustomers",Customer.class).getResultList();
+		return customers;
+	}
+	@Override
+	public void update(Customer customer) {
+		em.merge(customer);
+	}
+	@Override
+	public void delete(Customer customer) {	
+		em.remove(customer);
+	}
+	
+}

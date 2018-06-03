@@ -1,0 +1,13 @@
+package repository;
+
+import java.util.List;
+
+public interface GenericsRepository {
+
+	public <T> T save(Class<T> generic);
+	public <T> T findByPrimaryKey(Long id);
+	public <T> List<T> findALl();
+	public <T> void update(Class<T> generic);
+	public void delete(Customer customer);
+	
+}

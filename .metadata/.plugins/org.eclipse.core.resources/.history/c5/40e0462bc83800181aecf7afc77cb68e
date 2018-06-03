@@ -1,0 +1,63 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.FlowLayout;
+
+public class ESearchApp extends JFrame {
+
+	private JPanel EmploySearch;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ESearchApp frame = new ESearchApp();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ESearchApp() {
+		setTitle("SearchEmploy");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		EmploySearch = new JPanel();
+		EmploySearch.setBorder(new EmptyBorder(5, 5, 5, 5));
+		EmploySearch.setLayout(new BorderLayout(0, 0));
+		setContentPane(EmploySearch);
+		
+		JPanel contantPane = new JPanel();
+		FlowLayout flowLayout = (FlowLayout) contantPane.getLayout();
+		flowLayout.setAlignment(FlowLayout.LEFT);
+		EmploySearch.add(contantPane, BorderLayout.NORTH);
+		
+		JLabel lblEmploylastname = new JLabel("EmployLastName");
+		contantPane.add(lblEmploylastname);
+		
+		textField = new JTextField();
+		contantPane.add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Search");
+		contantPane.add(btnNewButton);
+	}
+
+}

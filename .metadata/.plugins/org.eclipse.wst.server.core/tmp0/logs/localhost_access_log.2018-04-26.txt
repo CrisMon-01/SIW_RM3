@@ -1,0 +1,4 @@
+127.0.0.1 - - [26/Apr/2018:17:50:00 +0200] "GET / HTTP/1.1" 200 1167
+127.0.0.1 - - [26/Apr/2018:17:50:01 +0200] "GET /sie-servlet-es7/inseriscistudente.jsp HTTP/1.1" 500 7791
+127.0.0.1 - - [26/Apr/2018:18:57:37 +0200] "GET /sie-servlet-es7/inseriscistudente.jsp HTTP/1.1" 200 491
+127.0.0.1 - - [26/Apr/2018:18:57:44 +0200] "GET /sie-servlet-es7/processa?nome=cri&cognome=mon&matricola=489813&invia=invia HTTP/1.1" 404 1101

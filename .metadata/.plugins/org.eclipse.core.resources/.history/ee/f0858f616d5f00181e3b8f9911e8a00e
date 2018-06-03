@@ -1,0 +1,65 @@
+package repositoryjpa;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+import model.Customer;
+import repository.*;
+
+public class GenericJPARespository implements GenericsRepository {
+
+	//ATTRIBUTI
+	private EntityManager em;
+	EntityTransaction tx;
+
+	//COSTRUTTORE
+	public GenericJPARespository(EntityManager em){	
+		this.em=em;
+		tx = em.getTransaction();
+	}
+
+	@Override
+	public <T> T save(T generic, Long id) {
+		// TODO Auto-generated method stub
+		if(id!=null) {
+			T db = findByPrimaryKey(id);
+			if(db==null) 
+				em.persist(generic);			
+			else
+				em.merge(generic);
+		}
+		em.persist(generic);
+		return generic;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public <T> T findByPrimaryKey(Long id) {
+		// TODO Auto-generated method stub
+		return (T) em.find(T.getClass(), id);
+	}
+
+	@Override
+	public <T> List<T> findALl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> void update(T generic) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public <T> void delete(T generic) {
+		// TODO Auto-generated method stub
+
+	}
+
+	//METODI
+
+
+}

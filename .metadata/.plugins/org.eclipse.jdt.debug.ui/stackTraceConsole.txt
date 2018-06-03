@@ -1,0 +1,25 @@
+import java.sql.*;
+
+public class jdbcdemoRad {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("HelloWorld");
+		try {
+			// conn db				attensione a localhost ind ip lo ind ip ext
+			Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/schema1?useSSL=false","crismon-01","cm1019");		//drivermanager è f(DBMS) 	NB specificare richiesta ssl=false per sicurezza
+			//creazione statement
+			Statement mystatment = connection.createStatement();	//OBJ statico che fa query sql
+			//exe query
+			ResultSet res = mystatment.executeQuery("select * from t1");
+			//lavoro sul risultato
+			while(res.next()) {
+				System.out.println((res.getString("col1")+" ").concat(res.getString("col2")));
+			}
+			
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+}

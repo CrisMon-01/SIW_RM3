@@ -1,0 +1,28 @@
+import java.applet.Applet;
+
+import javax.swing.*;
+
+public class AppServer extends Applet{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2503648533160597851L;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwingUtilities.invokeLater(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub				
+				JFrame gui = new MainFrame("Finestra");	//Creazione finestra
+				
+				gui.setSize(1280, 720); 			//def dimensione
+				gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		//chiudi processo java
+				gui.setVisible(true);				//Rendo visibile				
+			}
+		});
+	}
+
+}

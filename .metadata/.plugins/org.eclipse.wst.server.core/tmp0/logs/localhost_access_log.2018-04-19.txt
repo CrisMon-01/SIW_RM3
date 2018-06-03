@@ -1,0 +1,12 @@
+127.0.0.1 - - [19/Apr/2018:16:56:12 +0200] "GET / HTTP/1.1" 200 1167
+127.0.0.1 - - [19/Apr/2018:16:56:13 +0200] "GET /JSPScratch/helloworld.jsp HTTP/1.1" 200 334
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:16:56:59 +0200] "GET /JSPScratch/helloworld.jsp HTTP/1.1" 200 334
+127.0.0.1 - - [19/Apr/2018:17:02:11 +0200] "GET /JSPScratch/helloworld.jsp HTTP/1.1" 200 426
+127.0.0.1 - - [19/Apr/2018:17:21:07 +0200] "GET /JSPScratch/scripletest.jsp HTTP/1.1" 200 356
+127.0.0.1 - - [19/Apr/2018:17:21:36 +0200] "GET /JSPScratch/scripletest.jsp HTTP/1.1" 200 361
+127.0.0.1 - - [19/Apr/2018:17:22:21 +0200] "GET /JSPScratch/scripletest.jsp HTTP/1.1" 500 3106
+127.0.0.1 - - [19/Apr/2018:17:22:36 +0200] "GET /JSPScratch/scripletest.jsp HTTP/1.1" 200 356
+127.0.0.1 - - [19/Apr/2018:17:38:09 +0200] "GET /JSPScratch/scripletest.jsp HTTP/1.1" 200 356
+127.0.0.1 - - [19/Apr/2018:17:38:17 +0200] "GET /JSPScratch/declarationtest.jsp HTTP/1.1" 500 2483
+127.0.0.1 - - [19/Apr/2018:17:38:32 +0200] "GET /JSPScratch/declarationtest.jsp HTTP/1.1" 200 315
+127.0.0.1 - - [19/Apr/2018:17:55:45 +0200] "GET /JSPScratch/declarationtest.jsp HTTP/1.1" 200 315
